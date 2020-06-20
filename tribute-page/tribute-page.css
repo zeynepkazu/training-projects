@@ -1,0 +1,336 @@
+
+/*
+    ======================================================
+    Colors
+    ======================================================
+*/
+:root{
+    --main-dark-color: #D1D0C8;         /* dark brown*/
+    --lighter-dark-color: #92817a;      /* medium brown*/
+    --main-highlight-color: #023F9E;     /* dark blue*/
+    --second-highlight-color: #FF9f55;  /* black*/
+    --main-light-color: #e1dcda;        /* beige*/
+		--blue-text-color: #1198FA;          /*blue*/
+		font-size: 14px;
+}
+
+
+/*
+    ======================================================
+    Global Style
+    ======================================================
+*/
+html{
+    box-sizing: border-box;
+		border: solid #1198FA 10px;
+}
+
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+
+body{
+    color: var(--blue-text-color);
+    background-color: var(--main-light-color);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+		position: relative;
+}
+
+h1, h2{
+    font-family: 'Baloo Thambi 2', cursive;
+		color: var(--blue-text-color);
+
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+h2{
+    color: var(--blue-text-color);
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+h4{
+	color: #1198FA !important;
+}
+
+p {
+	color: black;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+
+/*
+    ======================================================
+    Header
+    ======================================================
+*/
+header{
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+		margin-top: 60px;
+}
+
+nav ul{
+    float: right;
+    margin-top: 0;
+		margin-left: 30px;
+
+}
+
+
+.nav{
+    width: 100%;
+    height: 60px;
+		line-height: 60px;
+    background-color: var(--main-dark-color);
+  	position: sticky;
+		top: 0;
+		z-index: 10;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav a{
+    color: black;
+    font-size:1.5rem;
+    text-decoration: none;
+    padding: 40px;
+}
+
+nav a:hover {
+	color: #1198FA;
+}
+
+#quote-poem {
+	font-size: 1.5rem;
+	font-family: cursive;
+	text-align: right;
+	color: black;
+	margin-right: 30px;
+
+
+}
+
+ul li{
+	list-style: none;
+}
+
+
+/*
+    ======================================================
+    Bio Section
+    ======================================================
+*/
+
+.history-div{
+    margin: 30px;
+}
+
+#image{
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 30px;
+		border: solid black 10px;
+}
+
+#img-caption{
+    font-size: 1.3rem;
+    text-align: center;
+		color: black;
+}
+
+
+/*
+    ======================================================
+    Timeline Section
+    ======================================================
+*/
+#timeline-section{
+    margin-top: 30px;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+#timeline-section h4{
+    font-size: 2rem;
+		margin: 0;
+}
+
+#timeline-section h2{
+    color: var(--main-highlight-color);
+}
+
+/* Vertical line */
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Add vertical line */
+.timeline::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left:50%;
+    margin-left: -3px;
+		box-sizing: inherit;
+}
+
+/* Container around content */
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Circles in the timeline */
+.container::after{
+    content: "";
+    position: absolute;
+    width:  25px;
+    height: 25px;
+    right: -13px;
+    background-color: var(--blue-text-color);
+    border: 4px solid black;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+		opacity: 0.70;
+		box-sizing: inherit;
+}
+
+/* Place container to the left */
+.left{
+    left: 0;
+}
+
+/* Place container to the right */
+.right{
+    left:50%;
+}
+
+
+.right::after{
+    left:-13px;
+		box-sizing: inherit;
+}
+
+
+.content{
+    padding: 20px 30px;
+    background-color: var(--main-dark-color);
+    position: relative;
+    border-radius: 6px;
+    color: var(--main-light-color);
+		box-shadow: 0 0 10px 0 black;
+}
+
+
+/*
+    ======================================================
+    Poems Section
+    ======================================================
+*/
+#poems-section{
+    margin: 30px;
+    padding: 35px 0px;
+    text-align: center;
+		color: var(--blue-text-color)
+}
+
+#grave-image{
+	border-radius: 15px;
+	width: auto;
+}
+
+
+/*
+    ======================================================
+    Responsive
+    ======================================================
+*/
+@media screen and (min-width:1200px){
+    #biography-section{
+        display: flex;
+        margin: 0 35px;
+        padding-top: 80px;
+    }
+
+    .history-div{
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    #img-div{
+        margin: 20px;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    h1{
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    #image{
+        max-width: 80%;
+    }
+
+}
+
+
+/* To the timeline be responsive */
+@media screen and (max-width:600px){
+
+	  /* Timeline to the left */
+    .timeline::after{
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+
+    /* All circles to the left */
+    .left::after, .right::after{
+        left: 15px;
+    }
+
+    /* All right containers behave like the left ones */
+    .right{
+        left: 0%;
+    }
+
+}
