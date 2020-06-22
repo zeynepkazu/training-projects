@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Green Tea Survey</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Users/zeynep/Desktop/CodesAll/github/training-projects/survey-form/survey-form.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <header class="header">
+                  <div class="company-logo">
+                        <a id="company-logo" href="#"><img class="logo" src="https://image.freepik.com/free-vector/green-tea-logo_73950-214.jpg" alt="Green Tea Logo"> 
+                        </a>
+                  </div> 
+
+                <h1 id="title" class="text-center">Green Tea Survey Form</h1>
+
+            </header>
+
+            <p id="description" class="description text-center">
+              Please help us further understand your green tea consumption habits.
+              </p>
+
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Type your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Type your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+               <label id="number-label" for="number">Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="13"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <p>Which option best describes your lifestyle?</p>
+                <select id="dropdown" name="lifestyle" class="form-control" required>
+                  <option disabled selected value>Choose your lifestyle</option>
+                  <option value="veryActive">Very active</option>
+                  <option value="active">Active</option>
+                  <option value="moderatelyActive">Moderately active</option>
+                  <option value="slightlyActive">Slightly active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>How often do you drink green tea?</p>
+                <label>
+                  <input
+                    name="frequency"
+                    value="often"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Often
+                  </label>
+                  
+                <label>
+                  <input
+                    name="frequency"
+                    value="sometimes"
+                    type="radio"
+                    class="input-radio"
+                  />Sometimes
+                </label>
+                
+          
+                <label
+                  ><input
+                    name="frequency"
+                    value="rarely"
+                    type="radio"
+                    class="input-radio"
+                  />Rarely
+               </label> 
+                
+
+                <label
+                  ><input
+                    name="frequency"
+                    value="never"
+                    type="radio"
+                    class="input-radio"
+                  />Never</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  What is your favorite soft beverage?
+                </p>
+                <select id="fav-beverage" name="fav-beverage" class="form-control" required>
+                  <option disabled selected value>Tell us your favorite</option>
+                  <option value="coffee">Coffee</option>
+                  <option value="tea">Tea</option>
+                  <option value="fruit-juice">Fruit Juice</option>
+                  <option value="soda">Soda</option>
+                </select>  
+                  <input
+                  type="text"
+                  name="drink-other"
+                  id="drink-other"
+                  class="form-control"
+                  placeholder="Other (Please specify)" 
+                  />
+                
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  Which green tea flavors have you tried?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+          
+                <label>
+                  <input
+                    name="try-flavor"
+                    value="mint"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Mint
+                </label>
+
+                <label>
+                  <input
+                    name="try-flavor"
+                    value="tulsi"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Tulsi
+                </label>
+                
+                <label>
+                  <input
+                    name="try-flavor"
+                    value="chamomile"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Chamomile
+               </label> 
+                
+                <label>
+                  <input
+                    name="try-flavor"
+                    value="jasmine"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Jasmine
+               </label>
+                
+                <label
+                  ><input
+                    name="try-flavor"
+                    value="matcha"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Matcha
+               </label>
+
+                <label
+                  ><input
+                    name="try-flavor"
+                    value="himalayan"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Himalayan
+                </label>
+                              
+                <label>
+                  <input
+                    name="try-flavor"
+                    value="honey-lemon"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Honey lemon
+                </label>
+                
+              <div class="form-group">
+                <p>Any additional comments about green tea products?</p>
+                <textarea
+                  id="comments"
+                  class="form-control"
+                  name="comment"
+                  placeholder="Please let us know..."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+    </body>
+</html>
