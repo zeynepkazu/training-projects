@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbebb1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color:#000000de;
+  
+}
+
+.brand {
+  width: 170px;
+}
+
+.logo { 
+  width: 160px;
+} 
+
+ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul > li > a {
+color: blanchedalmond;
+font-size: 20px;
+}
+
+.container {
+  width: 100%
+}
+
+a:hover {
+  color: #f9c333; 
+  transition: color 0.15s ease-out; 
+}
+
+h1 {
+  padding-top: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  color: #6b5008;
+  font-weight: bold;
+}
+
+p {
+  font-size: 23px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.icon {
+  font-size: 43px;
+  color: #176d49;
+  padding: 20px;
+}
+
+.description {
+  padding: 11px 8px 0 5px;
+}
+
+.about-image {
+  max-width: 100%;
+  width: 500px;
+  padding: 39px;
+}
+
+.features {
+  display: flex;
+}
+
+p.about-text {
+  padding-top: 70px;
+}
+
+.grid iframe {
+  padding-top: 50px;
+}
+
+.contact .grid {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+ul.footer-bar {
+  width: auto;
+  display: block; 
+}
+
+
+.footer-bar a {
+  color: #000;
+  font-size: 15px;
+}
+
+form {
+  padding-top: 6px;
+}
+
+button {
+  color: #443203bf;
+  font-size: 15px;
+  background-color: #f9c333;
+  box-shadow: 2px 2px 0 0 #bba875bf;
+}
+
+
+button:hover {
+  transform: scale(1.1);
+  transition: size 0.15s ease-out; 
+}
+
+.form-group input {
+  width: 230px;
+  height: 30px;
+  text-align: center;
+  border: solid 2px #bba875bf;
+}
