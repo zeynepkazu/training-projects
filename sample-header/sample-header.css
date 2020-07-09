@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #E5E5E5;
+  border-bottom: solid black 1px;
+  
+}
+
+.brand {
+  width: 170px;
+  border-bottom: solid black 1px;
+}
+
+.logo { 
+  width: 130px;
+  padding: 20px;
+} 
+
+ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul > li > a {
+ color:#4c2c0e;
+ font-size: 20px;
+ text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: #df742c; 
+  transition: color 0.15s ease-out;
+}
+
+.container {
+  width: 100%;
+}
+
+.head-image {
+  padding: auto;
+}
+
+.headline {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin: 35px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.headline-content {
+  position: relative;
+  text-align: center;
+}
+
+/**
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  padding:95px;
+  margin: auto;
+}
+
+.overlay::before {
+  content: "";
+  background: linear-gradient( 
+                    180deg, rgba(0, 0, 0, 0.6) 0%, 
+                     rgba(0, 0, 0, 0.6) 100%),
+                     url( 'brand-image.png');
+  position: absolute;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  width: 1200px;
+  height: 600px;
+}
+
+**/
+
+h1 {
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  background-color: #F48924;
+  color: #fff;
+  width: 213px;
+  height: 53px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
