@@ -42,9 +42,9 @@ ul {
 }
 
 ul > li > a {
- color:#4c2c0e;
- font-size: 20px;
- text-decoration: none;
+  color:#4c2c0e;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 ul > li > a:hover {
@@ -86,36 +86,6 @@ ul > li > a:hover {
   position: relative;
   text-align: center;
 }
-
-/**
-
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 1200px;
-  height: 600px;
-  padding:95px;
-  margin: auto;
-}
-
-.overlay::before {
-  content: "";
-  background: linear-gradient( 
-                    180deg, rgba(0, 0, 0, 0.6) 0%, 
-                     rgba(0, 0, 0, 0.6) 100%),
-                     url( 'brand-image.png');
-  position: absolute;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  width: 1200px;
-  height: 600px;
-}
-
-**/
 
 h1 {
   font-weight: 600;
