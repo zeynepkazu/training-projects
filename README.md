@@ -10,6 +10,6 @@
 
 - [This is a product landing page.](./landing-page/landing-page.html)
 
-- [This is a product landing page.](./sample-header/sample-header.html)
+- [This is a sample header.](./sample-header/sample-header.html)
 
 - [This is a sample contact form.](./contact-form/contact-form.html)
