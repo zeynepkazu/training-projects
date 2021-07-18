@@ -15,3 +15,6 @@
 - [This is a sample contact form.](./contact-form/contact-form.html)
 
 - [This is a simple switch.](./simple-switch/simple-switch.html)
+
+- [This is a sample landing page design implementation.](./trafalgar-landing-page/index.html)
+

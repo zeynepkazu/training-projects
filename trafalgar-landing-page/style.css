@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+:root {
+  --dark-grey: #1f1534;
+  --gray: #7d7987;
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #458ff6;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px 180px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navbar-items li a {
+  text-decoration: none;
+  line-height: 23px;
+  color: var(--dark-grey);
+  opacity: 0.5;
+  margin: 0 20px;
+}
+
+.dots {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 132px;
+  height: 115px;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+}
+
+.navbar-items li a:hover {
+  opacity: 1;
+  transition: 0.15s;
+}
+
+.navbar-items li.active a {
+  opacity: 1;
+  transition: 0.15s;
+  font-weight: bold;
+}
+
+/* Hero Container */
+
+.hero-container {
+  display: flex;
+  margin-top: 85px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container .left {
+  margin-right: 110px;
+}
+
+.hero-container .left h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 25px;
+  color: var(--black);
+}
+
+.hero-container .left h2 {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  margin-bottom: 45px;
+  width: 420px;
+  color: var(--gray);
+}
+
+button.home-page {
+  color: var(--white);
+  background-color: var(--blue);
+  font-weight: 700;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 55px;
+  padding: 0 36px;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #104288;
+  transition: 0.15s all;
+}
